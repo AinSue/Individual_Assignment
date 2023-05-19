@@ -1,0 +1,133 @@
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="asset\css\style.css">
+<title> Multimedia </title> 
+</head> 
+
+<body> 
+
+<!---INSERTING VIDEO--->
+
+
+<!---BLEACH--->
+
+<center>
+<video controls width="720px" muted> 
+  <source src="asset/video/bleach.mp4" type="video/mp4">
+ </video> 
+
+<br><br><br><br>
+
+
+<!---ONEPIECE--->
+<video controls width="720px" autoplay muted> 
+  <source src="asset/video/onepiece.mp4" type="video/mp4">
+ </video> 
+<br><br><br><br>
+
+<!---EMBEDDING YOUTUBE VIDEO--->
+<hr>
+<center> <b> YOUTUBE VIDEO <b> </center> 
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b1Y4BJ73yU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br><br><br>
+
+<marquee> <h1> UNFORGIVEN </h1> </marquee> 
+
+
+<br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pWVtB0ZNn0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<marquee> <h1> ANPANMAN </h1> </marquee>
+
+
+<hr>
+<center> <b> MUSIC <b> </center> 
+<hr>
+
+<br><br><br><br>
+
+<!---INSERTING AUDIO---> 
+<audio controls loop> 
+<source src="asset/audio/trance.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls loop> 
+<source src="asset/audio/strawberrysoju.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls loop> 
+<source src="asset/audio/meremaula.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls loop> 
+<source src="asset/audio/punk.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls loop> 
+<source src="asset/audio/shoong.mp3" type="audio/mp3">
+</audio>
+
+
+
+<br><br><br><br>
+
+<hr>
+<center> <b> JAVA APPLET <b> </center> 
+<hr>
+
+<!---JAVA APPLET---> 
+
+<!---to call the css---> 
+
+   <div id="clock"> 8:10:45 </div>
+
+<!---to link to the current time---> 
+ 
+   <script src="clock2.js"></script>
+
+<br><br><br><br>
+
+
+<!---EMBEDDING A PDF FILE---> 
+<center>
+<iframe src="asset/pdf/Individual Assignment (1).pdf" width="80%" height="800px">
+</iframe>
+</center>
+<script> 
+setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
+
+	if (hour > 12) {
+		hour -= 12;
+		am_pm = "PM";
+	}
+	if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime = hour + ":"
+			+ min + ":" + sec + am_pm;
+
+	document.getElementById("clock")
+			.innerHTML = currentTime;
+}
+showTime();
+
+</script> 
+
+
+</body> 
+</html> 
